@@ -1,0 +1,13 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.honors_scholars{
+padding: 0;
+}
+
+.honors_scholars > p {
+margin: 0;
+padding: 0;
+display: block;
+clear: both;
+}
