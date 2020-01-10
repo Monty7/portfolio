@@ -3,18 +3,28 @@ import React, {Component} from 'react'
 
 class ArticleProject extends Component {
 
-    render(){
+
+    renderTechnologies(props){
+         props.technologies.map(technology => {
+             return (<li>technology</li>)
+         })
+    }
+
+    render(props){
+
+
+
         return(
         <article class="block">
         <div class="inner_img_block">
             <img src="honors_scholars_ani/images/honors_scholars.jpg" />
         </div>
         <div class="inner_text_block">
-            <ArticleText technologies={['HTML/CSS', 'Ingeniux', 'JQuery', 'Green Sock']}/>
-            <h4>Honors Scholars Animation</h4>
-                <p>An animation for marketing Chicago-Kent's Honor Scholars program.  The animation feature was displayed on the old version of the website.</p>
+            <h4>{props.name}</h4>
+        <p>{props.description}</p>
                 <h5>Technologies:</h5>
                 <ul>
+                    {this.renderTechnologies}
                     <li>HTML/CSS</li>
                     <li>Ingeniux</li>
                     <li>Jquery</li>
