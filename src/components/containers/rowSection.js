@@ -30,7 +30,7 @@ const articlesText = [
 
 const renderAllRowArticles = () => {
     articlesText.map(article =>{
-        <ArticleText name={article.name} description={article.description} technologies={article.technologies}/>
+        <ArticleProject name={article.name} description={article.description} technologies={article.technologies}/>
     })
 }
 
