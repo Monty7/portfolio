@@ -117,3 +117,5 @@ const HonorsScholars = () => {
     )
 }
 
+export default HonorsScholars
+
