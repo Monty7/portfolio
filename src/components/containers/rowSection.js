@@ -9,3 +9,5 @@ const RowSection = () => {
         </section>
     )
 }
+
+export default RowSection
