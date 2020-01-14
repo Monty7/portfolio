@@ -36,17 +36,15 @@ const articlesText = [
     }
 ]
 
-const renderAllRowArticles = () => {
-    articlesText.map(article =>{
-        <ArticleProject name={article.name} description={article.description} technologies={article.technologies}/>
-    })
-}
+const renderAllRowArticles = articlesText.map(article => ( <ArticleProject name={article.name} description={article.description} technologies={article.technologies}/> )
+    )
 
 const RowSection = () => {
 
     return (
         <section>
-           {renderAllRowArticles()}
+           
+           {renderAllRowArticles}
         </section>
     )
 }
