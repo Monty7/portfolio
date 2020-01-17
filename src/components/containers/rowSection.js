@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleProject from '../articleProject'
+import HonorsScholars from '../honor_scholar_modal'
 
 const articlesText = [
     {
@@ -7,8 +8,8 @@ const articlesText = [
         image: "honors_scholars_ani/images/honors_scholars.jpg",
         description: "An animation for marketing Chicago-Kent's Honor Scholars program.  The animation feature was displayed on the old version of the website.",
         technologies: ['HTML/CSS', 'Ingeniux', 'JQuery', 'Green Sock'],
-        gitLink: "https://bitbucket.org/Monty777/chicago-kent/src/master/Honors_Scholars_Animation/",
-        liveLink: "honors_scholars_ani/index.html"
+        gitLink: "https://github.com/Monty7/HonorsS_Animation",
+        liveLink: "https://monty7.github.io/HonorsS_Animation/"
     },
     {
         name: "GPA Calculator",
@@ -45,6 +46,7 @@ const RowSection = () => {
         <section>
            
            {renderAllRowArticles}
+         
         </section>
     )
 }
