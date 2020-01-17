@@ -1,6 +1,5 @@
 import React from 'react'
 import ArticleProject from '../articleProject'
-import HonorsScholars from '../honor_scholar_modal'
 
 const articlesText = [
     {
