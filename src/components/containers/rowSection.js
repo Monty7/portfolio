@@ -15,8 +15,8 @@ const articlesText = [
         image: "GPA_calc/img/GPA_Calc.jpg",
         description: "Originally created in Vanilla JavaScript by a different author on the old version of the website.  I re-created the GPA calculator using Jquery to be cross-compatible for browsers on the new website.",
         technologies: ["HTML/CSS/BootStrap", "JQuery", "Drupal"],
-        gitLink: "",
-        liveLink: ""
+        gitLink: "https://github.com/Monty7/GPA_CALCULATOR",
+        liveLink: "https://monty7.github.io/GPA_CALCULATOR"
     },
     {
         name: "Intellectual Property Modal",
@@ -32,11 +32,11 @@ const articlesText = [
         description: "Created a wireframe for the home page of Chicago-kent's new website that launched September 2017 for the web development team in the main campus to reference.  There have been a few slight changes to the structure but most elements from the wireframe were inplemented.",
         technologies: ["Adobe Photoshop"],
         gitLink: "",
-        liveLink: ""
+        liveLink: "img/CK-wireframe.pdf"
     }
 ]
 
-const renderAllRowArticles = articlesText.map(article => ( <ArticleProject name={article.name} description={article.description} technologies={article.technologies}/> )
+const renderAllRowArticles = articlesText.map((article, index) => ( <ArticleProject key={index} gitLink={article.gitLink} liveLink={article.liveLink} name={article.name} description={article.description} technologies={article.technologies}/> )
     )
 
 const RowSection = () => {

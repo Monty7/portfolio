@@ -1,39 +1,32 @@
 import React, {Component} from 'react'
-
+import Technologies from './technologies'
 
 class ArticleProject extends Component {
 
-
-    renderTechnologies(){
-         this.props.technologies.map(technology => {
-             return (<li>technology</li>)
-         })
-    }
-
     render(){
-
+        
         return(
 
-        <article class="block">
-            <div class="inner_img_block">
+        <article className="block">
+            <div className="inner_img_block">
                 <img alt="Honors Scholor animation"
                 src="honors_scholars_ani/images/honors_scholars.jpg" />
             </div>
-            <div class="inner_text_block">
+            <div className="inner_text_block">
                 <h4>{this.props.name}</h4>
             <p>{this.props.description}</p>
                     <h5>Technologies:</h5>
                     <ul>
-                        {this.renderTechnologies}
+                        <Technologies technologies={this.props.technologies} />
                     </ul>
             </div>
-            <div class="links">
+            <div className="links">
                 <p>
-                    <a href="https://bitbucket.org/Monty777/chicago-kent/src/master/Honors_Scholars_Animation/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-git-square" id="git"></i>
+                    <a href={this.props.gitLink} target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-git-square" id="git"></i>
                     </a>
-                    <a href="honors_scholars_ani/index.html" target="_blank" id="honors_scholars_link" data-toggle="modal" data-target="#honors_scholars">
-                        <i class="fas fa-link" id="link"></i>
+                    <a href={this.props.liveLink} target="_blank" rel="noopener noreferrer">
+                        <i className="fas fa-link" id="link"></i>
                     </a>
                 </p>
             </div>
