@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import Technologies from './technologies'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGitSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 class ArticleProject extends Component {
     
@@ -22,9 +25,10 @@ class ArticleProject extends Component {
             <div className="links">
                 <p>
                     <a href={this.props.gitLink} target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-git-square" id="git"></i>
+                        <FontAwesomeIcon className="fa fa-git-square" icon={faGitSquare} />
                     </a>
                     <a href={this.props.liveLink} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon className="fa fa-link" icon={faLink} />
                         <i className="fas fa-link" id="link"></i>
                     </a>
                 </p>
