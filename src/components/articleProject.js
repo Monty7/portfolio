@@ -2,9 +2,8 @@ import React, {Component} from 'react'
 import Technologies from './technologies'
 
 class ArticleProject extends Component {
-
+    
     render(){
-        
         return(
 
         <article className="block">
