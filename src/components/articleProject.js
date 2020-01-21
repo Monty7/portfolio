@@ -9,8 +9,8 @@ class ArticleProject extends Component {
 
         <article className="block">
             <div className="inner_img_block">
-                <img alt="Honors Scholor animation"
-                src="honors_scholars_ani/images/honors_scholars.jpg" />
+                <img alt={this.props.name}
+                src={this.props.image} />
             </div>
             <div className="inner_text_block">
                 <h4>{this.props.name}</h4>
