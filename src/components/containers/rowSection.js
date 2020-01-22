@@ -5,6 +5,9 @@ import ImgWireframe from '../../img/CK-wireframe.jpg'
 import ImgGPA from '../../img/GPA_Calc.jpg'
 import ImgHS from '../../img/honors_scholars.jpg'
 import ImgIP from '../../img/IP_modal.jpg'
+import ImgTimeKeeper from '../../img/flatiron/timeKeeper.jpg'
+import ImgGiftList from '../../img/flatiron/giftList.jpg'
+import ImgNoteSaver from '../../img/flatiron/noteSaver.jpg'
 const articlesText = { 
     Org: [
             {
@@ -42,6 +45,35 @@ const articlesText = {
                             gitLink: "",
                             liveLink: "/img/CK-wireframe.pdf"
                         }
+                    ]
+                },
+                {
+                name: "Flatiron Projects",
+                projects: [
+                            {
+                                name: "Time Keeper",
+                                image: ImgTimeKeeper,
+                                description: "An application that tracks time within a span of a month.",
+                                technologies: ['HTML/CSS', 'Ruby On Rails', 'React', 'Redux'],
+                                gitLink: "https://github.com/Monty7/timekeeper_react_frontend",
+                                liveLink: "https://timekeeper-react.netlify.com/"
+                            },
+                            {
+                                name: "Note Saver",
+                                image: ImgNoteSaver,
+                                description: "An application that save a user notes.",
+                                technologies: ['Ruby', 'Sinatra'],
+                                gitLink: "https://github.com/Monty7/Note_saver",
+                                liveLink: "https://note-saver-heroku.herokuapp.com/"
+                            },
+                            {
+                                name: "Gift List",
+                                image: ImgGiftList,
+                                description: "An application that allows a user to create a gift list and view other gift lists to potential purchase for other people.",
+                                technologies: ['Ruby', 'Ruby On Rails', 'Bootstrap'],
+                                gitLink: "https://github.com/Monty7/my_gift_list",
+                                liveLink: "https://gift-list-heroku.herokuapp.com/"
+                            }                           
                     ]
                 }
             ]
