@@ -1,11 +1,13 @@
 import React from 'react'
+
 import ArticleProject from '../articleProject'
 import ImgWireframe from '../../img/CK-wireframe.jpg'
 import ImgGPA from '../../img/GPA_Calc.jpg'
 import ImgHS from '../../img/honors_scholars.jpg'
 import ImgIP from '../../img/IP_modal.jpg'
 const articlesText = { 
-    Org: {
+    Org: [
+            {
             name: "Chicago-Kent",
             projects: [
                         {
@@ -41,17 +43,18 @@ const articlesText = {
                             liveLink: "/img/CK-wireframe.pdf"
                         }
                     ]
-        }
+                }
+            ]
 }
 
-const renderAllRowArticles = articlesText.Org.projects.map((article, index) => ( <ArticleProject key={index} image={article.image} gitLink={article.gitLink} liveLink={article.liveLink} name={article.name} description={article.description} technologies={article.technologies}/> )
+const renderAllRowArticles = articlesText.Org.map((org, index) => ( <ArticleProject key={index} projects={org.projects} orgName={org.name} /> )
     )
 
 const RowSection = () => {
 
     return (
         <section id="wrapper">
-           
+
            {renderAllRowArticles}
          
         </section>
