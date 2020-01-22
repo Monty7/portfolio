@@ -42,15 +42,26 @@
 	width: 10%;
 	margin: 1em 0;
 } */
+.container{
+  display: flex;
+  flex-direction: column
+}
 
 #wrapper{
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-auto-flow: dense;
+
 	box-sizing: border-box;
 	grid-gap: 4px;
 	
 }
+
+.project_name {
+  grid-column-start: 1;
+  grid-column-end: seven;
+}
+
 .block {
 	margin: 0 0 15px 0;
 
