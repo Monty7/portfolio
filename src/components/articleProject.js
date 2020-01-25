@@ -32,10 +32,10 @@ class ArticleProject extends Component {
                 console.log(projectProperties)
         return(
             
-            <>
+            <div className="projectRow">
                 <SectionName orgName={this.props.orgName}/>
                 {projectProperties}
-            </>
+            </div>
         )
     }
 }
