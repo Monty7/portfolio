@@ -35,6 +35,7 @@ class ArticleProject extends Component {
             <div className="projectRow">
                 <SectionName orgName={this.props.orgName}/>
                 {projectProperties}
+               
             </div>
         )
     }
