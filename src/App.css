@@ -1,6 +1,10 @@
+body{
+	font-family: 'Oswald';
+}
 .container{
 	width: 95%;
 	max-width: 1000px;
+
 }
 
 .projectRow {
@@ -63,11 +67,9 @@ article {
  }
 
  h1, h3, h4 {
- 	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
  }
- p{
- 	font-family: 'Open Sans', sans-serif;
- }
+
  h4 {
  	 color: gold;
  }
