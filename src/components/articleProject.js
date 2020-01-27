@@ -29,7 +29,6 @@ class ArticleProject extends Component {
             </article>
             )}
         )
-                console.log(projectProperties)
         return(
             
             <div className="projectRow">
