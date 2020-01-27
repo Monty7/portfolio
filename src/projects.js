@@ -8,6 +8,35 @@ import ImgNoteSaver from './img/flatiron/noteSaver.jpg'
 
 const ArticlesText = { 
     Org: [
+        {
+            name: "Flatiron Projects",
+            projects: [
+                        {
+                            name: "Time Keeper",
+                            image: ImgTimeKeeper,
+                            description: "An application that tracks time within a span of a month.",
+                            technologies: ['HTML/CSS', 'Ruby On Rails', 'React', 'Redux'],
+                            gitLink: "https://github.com/Monty7/timekeeper_react_frontend",
+                            liveLink: "https://timekeeper-react.netlify.com/"
+                        },
+                        {
+                            name: "Note Saver",
+                            image: ImgNoteSaver,
+                            description: "An application that save a user notes.",
+                            technologies: ['Ruby', 'Sinatra'],
+                            gitLink: "https://github.com/Monty7/Note_saver",
+                            liveLink: "https://note-saver-heroku.herokuapp.com/"
+                        },
+                        {
+                            name: "Gift List",
+                            image: ImgGiftList,
+                            description: "An application that allows a user to create a gift list and view other gift lists to potential purchase for other people.",
+                            technologies: ['Ruby', 'Ruby On Rails', 'Bootstrap'],
+                            gitLink: "https://github.com/Monty7/my_gift_list",
+                            liveLink: "https://gift-list-heroku.herokuapp.com/"
+                        }                           
+                ]
+            },
             {
             name: "Chicago-Kent",
             projects: [
@@ -43,35 +72,6 @@ const ArticlesText = {
                             gitLink: "",
                             liveLink: "/img/CK-wireframe.pdf"
                         }
-                    ]
-                },
-                {
-                name: "Flatiron Projects",
-                projects: [
-                            {
-                                name: "Time Keeper",
-                                image: ImgTimeKeeper,
-                                description: "An application that tracks time within a span of a month.",
-                                technologies: ['HTML/CSS', 'Ruby On Rails', 'React', 'Redux'],
-                                gitLink: "https://github.com/Monty7/timekeeper_react_frontend",
-                                liveLink: "https://timekeeper-react.netlify.com/"
-                            },
-                            {
-                                name: "Note Saver",
-                                image: ImgNoteSaver,
-                                description: "An application that save a user notes.",
-                                technologies: ['Ruby', 'Sinatra'],
-                                gitLink: "https://github.com/Monty7/Note_saver",
-                                liveLink: "https://note-saver-heroku.herokuapp.com/"
-                            },
-                            {
-                                name: "Gift List",
-                                image: ImgGiftList,
-                                description: "An application that allows a user to create a gift list and view other gift lists to potential purchase for other people.",
-                                technologies: ['Ruby', 'Ruby On Rails', 'Bootstrap'],
-                                gitLink: "https://github.com/Monty7/my_gift_list",
-                                liveLink: "https://gift-list-heroku.herokuapp.com/"
-                            }                           
                     ]
                 }
             ]
