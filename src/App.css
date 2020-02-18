@@ -30,6 +30,7 @@ body{
 
 .block {
 	margin: 0 0 15px 0;
+	border-left: 10px solid transparent;
 
 }
 .inner_img_block {
@@ -81,7 +82,8 @@ article {
  }
 
 .block {
-  transition-property: border;
+
+  transition-property: border-color;
   transition-duration: .3s;
   transition-timing-function: linear;
   transition-delay: .1s;
