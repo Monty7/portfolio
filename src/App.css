@@ -30,7 +30,7 @@ body{
 
 .block {
 	margin: 0 0 15px 0;
-	border-left: 10px solid transparent;
+	border-top: 10px solid transparent;
 
 }
 .inner_img_block {
@@ -90,7 +90,7 @@ article {
 }
 
  .block:hover {
- 	border-left: 10px solid gold;
+ 	border-top: 10px solid gold;
  }
 
 
