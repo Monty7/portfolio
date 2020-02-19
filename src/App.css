@@ -13,14 +13,14 @@ body{
 	/*grid-template-columns: repeat(auto-fit,minmax(300px,1fr));*/
 	grid-template-columns: repeat(4, 300px);
 	grid-template-rows: 1fr;
-	  grid-auto-flow: dense;
-	  grid-gap: 12px;
-	  box-sizing: border-box;
+	grid-auto-flow: dense;
+	grid-gap: 12px;
+	box-sizing: border-box;
 }
 
 .project_name {
-  grid-column-start: 1;
-  grid-column-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 7;
   
 }
 
@@ -31,7 +31,7 @@ body{
 .block {
 	margin: 0 0 15px 0;
 	border-top: 10px solid transparent;
-
+	border-bottom: 10px solid transparent;
 }
 .inner_img_block {
 	height: 10em;
@@ -90,7 +90,8 @@ article {
 }
 
  .block:hover {
- 	border-top: 10px solid gold;
+	 border-top: 10px solid gold;
+	 border-bottom: 10px solid gold;
  }
 
 
