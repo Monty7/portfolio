@@ -1,23 +1,27 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGitSquare } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const ProjectLinks = (props) => {
-
+console.log(props)
     return(
         <div className="links">
             <p>
-                <a href={props.gitLink} target="_blank" rel="noopener noreferrer">
+                <Link to={props.gitLink} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className="fa fa-git-square" icon={faGitSquare} />
-                </a>
-                <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
+                </Link>
+        
+                <Link to={props.liveLink} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className="fa fa-link" icon={faLink} />
-                </a>
+                </Link>
             </p>
         </div>
     )
 }
+
+
 
 export default ProjectLinks
 
