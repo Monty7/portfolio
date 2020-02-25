@@ -20,9 +20,9 @@ const ProjectLinks = (props) => {
         return (
             <div className="links">
                 <p>
-                    <Link to={props.gitLink} target="_blank" rel="noopener noreferrer">
+                    <a href={props.gitLink} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon className="fa fa-git-square" icon={faGitSquare} />
-                    </Link>
+                    </a>
             
                     <Link to={props.liveLink} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon className="fa fa-link" icon={faLink} />
